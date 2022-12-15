@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>kodok acimalaka -vs- everybody</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div id="splashScreen" class="splash flex wrap center">
+            <span class="header flex center"><b>🐸 one hour of silence broken by the occasional kodok acimalaka 🐸</b></span>
+            <div class="breaker"></div>
+            <span class="paragraph">kodok acimalaka have brought me irrefutable joy and happiness. respect the <a class="inline-link" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=Ex3w5oq1LPg">original source <sub>🡥</sub></a> this smol web toy is created for the lols between my friends and i. you can join in the fun by leaving this tab open and see how long you can take it before deciding to end it all. i may or may not update this in the future. enjoy this while it's around. is this funny to u? i make other stuff that may or may not be related to the interweb and memes at all. <br>&nbsp;<br><a class="inline-link" target="_blank" rel="noopener noreferrer" href="https://twitter.com/vngnc">follow me on twitter <sub>🡥</sub></a></span>
+            <div class="breaker"></div>
+            <button class="button" onclick="start()">begin suffering</button>
+        </div>
+        <div id="container" class="flex center wrap">
+
+            <div class="flex header center">
+                <span id='hello'>🐸 one hour of silence broken by the occasional kodok acimalaka 🐸</span>
+            </div>
+
+            <div class="breaker"></div>
+
+            <div class="counters">
+                <span>time wasted:&nbsp;</span><span id="runtime"></span>
+                <div class="breaker"></div>
+                <span>score:&nbsp;</span><span id="score">0</span>
+            </div>
+
+            <div class="breaker"></div>
+
+            <div id="vidcon" class="hide flex center">
+                <video 
+                    id="vid"
+                    src="kodok.mp4" 
+                    preload="auto"
+                    ></video>
+            </div>
+
+            <div class="breaker"></div>
+
+            <div class="share"><a id="tweet" target="_blank" rel="noopener noreferrer" href="https://twitter.com/intent/tweet?text=Hello%20world"><button class="tweet">share to twitter</button></a></div>
+        
+        </div>
+        <script src="script.js" async defer></script>
+    </body>
+</html>
