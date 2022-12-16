@@ -18,6 +18,17 @@
         <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#ffffff">
+        <meta http-equiv="Cache-control" content="no-cache, no-store, must-revalidate">
+        <meta http-equiv="Pragma" content="no-cache">
+
+        <!-- What took you so long? -->
+
+        <meta name="twitter:card" content="summary_large_image">
+  	    <meta name="twitter:site" content="acimalaka.xxxxizzy.xyz">
+  	    <meta name="twitter:creator" content="@vngnc">
+  	    <meta name="twitter:title" content="You have been challenged by Kodok Acimalaka 🐸">
+  	    <meta name="twitter:description" content="have your one hour of silence broken by the occasional muhahahahahaha">
+        <meta name="twitter:image" content="muhahaha_wide.png">
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -25,12 +36,13 @@
         <![endif]-->
 
         <div id="splashScreen" class="splash flex wrap center">
-            <span class="header flex center"><b>🐸 one hour of silence broken by the occasional kodok acimalaka 🐸</b></span>
-            <div class="breaker"></div>
-            <span class="paragraph">kodok acimalaka have brought me irrefutable joy and happiness. respect the <a class="inline-link" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=Ex3w5oq1LPg">original source <sub>🡥</sub></a> this smol web toy is created for the lols between my friends and i. you can join in the fun by leaving this tab open and see how long you can take it before deciding to end it all. i may or may not update this in the future. enjoy this while it's around. is this funny to u? i make other stuff that may or may not be related to the interweb and memes at all. <br>&nbsp;<br><a class="inline-link" target="_blank" rel="noopener noreferrer" href="https://twitter.com/vngnc">follow me on twitter <sub>🡥</sub></a></span>
-            <div class="breaker"></div>
-            <button class="button" onclick="start()">begin suffering</button>
+                <span class="header flex center"><b>🐸 one hour of silence broken by the occasional kodok acimalaka 🐸</b></span>
+                <div class="breaker"></div>
+                <span class="paragraph">kodok acimalaka has brought me irrefutable joy and happiness. respect the <a class="inline-link" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=Ex3w5oq1LPg">original source.</a> this smol web toy is created for the lols between my friends and i. you can join in the fun by leaving this tab open and see how long you can take it before deciding to end it all. i may or may not update this in the future. enjoy this while it's around. <b>may be broken on some devices, especially phones.</b> i'm too unbothered to fix it lol.<br>&nbsp;<br>is this funny to u? i make other stuff that may or may not be related to the interweb and memes at all.<br><b><a class="inline-link" target="_blank" rel="noopener noreferrer" href="https://twitter.com/vngnc">follow me on twitter.</a></b></span>
+                <div class="breaker"></div>
+                <button class="button" onclick="start()">begin suffering</button>
         </div>
+
         <div id="container" class="flex center wrap">
 
             <div class="flex header center">
@@ -47,17 +59,20 @@
 
             <div class="breaker"></div>
 
-            <div id="vidcon" class="hide flex center">
+            <div id="vidcon" class="disappear flex center noselect">
                 <video 
                     id="vid"
                     src="kodok.mp4" 
                     preload="auto"
+                    width="100%"
+                    height="100%"
                     ></video>
             </div>
 
             <div class="breaker"></div>
 
-            <div class="share"><a id="tweet" target="_blank" rel="noopener noreferrer" href="https://twitter.com/intent/tweet?text=Hello%20world"><button class="tweet">share to twitter</button></a></div>
+            <div class="share"><button id="tweet" class="tweet" onclick="sendTweet()">share to twitter</button></div>
+            <div class="version noselect">Version 1.0</div>
         
         </div>
         <script src="script.js" async defer></script>

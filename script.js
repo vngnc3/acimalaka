@@ -7,20 +7,20 @@ const tweet = document.querySelector("#tweet");
 
 let _secondsPassed = 0;
 
-function composeTweet(currentScore) {
+function sendTweet() {
+    // compose tweet send tweet with time and score.
+    let currentScore = Number(score.innerHTML);
     let minutes = Math.floor(_secondsPassed/60);
     let template = `https://twitter.com/intent/tweet?text=`
-    return `${template}i wasted ${minutes} minutes getting my silence broken by the kodok acimalaka 🐸 try for yourself on https://acimalaka.xxxxizzy.xyz 😩`
-};
+    let composedTweet = `${template}i wasted ${minutes} minutes getting my silence broken by the kodok acimalaka ${currentScore} times 🐸 try for yourself on https://acimalaka.xxxxizzy.xyz 😩`
+    window.open(composedTweet, '_blank')
+}
 
 function stopwatch() {
     // Updates innerHTML with incremented value.
     _secondsPassed++;
     let output = new Date(_secondsPassed * 1000).toISOString().slice(11, 19);
     runtime.innerHTML = output;
-    let currentScore = Number(score.innerHTML);
-    let tweetContent = composeTweet(currentScore);
-    tweet.setAttribute('href', tweetContent);
 };
 
 function startStopwatch() {
@@ -30,7 +30,7 @@ function startStopwatch() {
 
 function play() {
     videoSauce.play();
-    videoContainer.classList.remove('hide');
+    videoContainer.classList.remove('disappear');
     let currentScore = Number(score.innerHTML);
     score.innerHTML = currentScore+1;
     playAfter(90,270);
@@ -45,7 +45,7 @@ function playAfter(minSeconds, maxSeconds) {
 };
 
 function videoEnd() {
-    videoContainer.classList.add('hide');
+    videoContainer.classList.add('disappear');
 };
 
 videoSauce.addEventListener('ended', videoEnd);

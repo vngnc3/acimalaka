@@ -9,12 +9,6 @@ body {
     "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
     sans-serif;
   color: whitesmoke;
-  background: linear-gradient(202deg, #533641, #3d4953, #445e3e, #6c8042);
-  background-size: 800% 800%;
-
-  -webkit-animation: bg 8s ease infinite;
-  -moz-animation: bg 8s ease infinite;
-  animation: bg 8s ease infinite;
 }
 
 #hello {
@@ -28,6 +22,12 @@ a {
 
 #container {
   width: 100vw;
+  height: 100vh;
+  background: linear-gradient(202deg, #533641, #3d4953, #445e3e, #6c8042);
+  background-size: 800% 800%;
+  -webkit-animation: bg 8s ease infinite;
+  -moz-animation: bg 8s ease infinite;
+  animation: bg 8s ease infinite;
 }
 
 .debug {
@@ -87,9 +87,10 @@ a {
 
 .tweet {
     width: auto;
-    padding: 2rem;
     height: 2rem;
     padding: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     border-radius: 1rem;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
       Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -132,7 +133,7 @@ a {
 }
 
 .paragraph {
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding: 2em;
 }
 
@@ -157,6 +158,25 @@ a {
     bottom: 1%;
     padding: 1em;
     margin: 1em;
+}
+
+.version {
+  position: fixed;
+  bottom: 0%;
+  left: 0%;
+  opacity: 20%;
+  font-family: monospace;
+  font-size: x-small;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
 }
 
 @-webkit-keyframes bg {
